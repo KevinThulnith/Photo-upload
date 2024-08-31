@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: system-ui;
+}
+body {
+  height: 97.6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  text-align: center;
+  position: relative;
+}
+form header {
+  position: absolute;
+  top: 12.5rem;
+  left: 17rem;
+  font-size: 2rem;
+}
+form .display {
+  height: 400px;
+  aspect-ratio: 16/ 9;
+  margin-top: 23px;
+  border: 2px solid black;
+  background-position: center;
+  background-size: cover;
+  border-radius: 13px;
+}
+/*---------------------*/
+form input[type="file"] {
+  display: none;
+}
+form label {
+  background: #c03920;
+  position: absolute;
+  min-width: 4rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  user-select: none;
+  cursor: pointer;
+  box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.25);
+  right: -1.5rem;
+  bottom: -1.5rem;
+}
+label::after {
+  color: #fff;
+  content: "+";
+  font-size: 4.5rem;
+  position: absolute;
+  transform: translate(-1.5rem, -1.5rem);
+}
+label:active {
+  box-shadow: none;
+}
+.pop {
+  display: none;
+}
